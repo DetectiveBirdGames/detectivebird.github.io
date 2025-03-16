@@ -134,6 +134,10 @@
 
 
 @media (max-width: 768px) {
+    #when{
+        margin-top: 300px;
+    }
+
     #when-description > p{
         font-size: 15px;
     }

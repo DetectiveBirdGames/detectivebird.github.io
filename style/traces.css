@@ -1,9 +1,16 @@
 #traces{
     display: flex;
+    display: -webkit-flex;
+
     position: relative;
     text-align: center;
+
     align-items: center;
+    -webkit-align-items: center;
+
     justify-content: center;
+    -webkit-justify-content: center;
+
     gap: 0px;
     margin-right: 25px;
     margin-left: 25px;

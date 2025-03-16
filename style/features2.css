@@ -1,3 +1,7 @@
+#images-mobile{
+    display: none;
+}
+
 .img-features-img{
     display: none;
 }
@@ -12,7 +16,8 @@
 #features-text > p{
     font-size: 40px;
     text-transform: uppercase;
-    margin: 0 10px;
+    /* margin: 0 10px; */
+    margin: 0 2%;
 }
 
 .line2{
@@ -468,260 +473,62 @@
 
 
 
+
+
 /* Адаптивность на телефоны */
 @media (max-width: 768px) {
+    #features-text > p{
+        font-size: 4vw;
+    }
 
+    #images-mobile{
+        display: block;
+        width: 100%;
+    }
 
     .img-line1, .img-line2{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        margin-top: 30px;
-    }
-
-    .img-line1{
-        gap: 300px;
-    }
-
-    .img-line2{
-        margin-top: 420px;
-        gap: 280px;
-    }
-
-
-    .img-line1 > div, .img-line2 > div{
-        width: 100%;
-        /* position: relative; */
-        gap: 300px;
-    }
-
-    .img-features-img{
-        display: block;        
-        width: 100%;
-        height: auto;    
-    }
-
-    #img1, #img2, #img3, #img4 {
         display: none;
     }
 
-    .second-img{
-        margin-top: 0px;
+    .img-container-mobile{
+        width: 100%;
+        /* margin-top: 50px; */
+        margin-top: 6vw;
+        text-align: center;
     }
 
-
-
-
-    .clip{
-        display: none;
-    }
-
-    #hand2{
-        width: 110px;
-        height: 140px;
-        left: 45px;
-        margin-top: -460px;
-    }
-
-    .features-description{
-        font-size: 20px;
-    }
-}
-
-
-
-@media (max-width: 745px) {
-    .img-line1{
-        gap: 280px;
-    }
-
-    .img-line2{
-        margin-top: 400px;
-        gap: 260px;
-    }
-
-
-    #hand2{
-        left: 50px;
-        margin-top: -440px;
-    }
-    
-}
-
-
-@media (max-width: 720px) {
-    #features-text > p{
-        font-size: 25px;
-    }
-
-
-    .img-line1{
-        gap: 260px;
-    }
-
-    .img-line2{
-        margin-top: 370px;
-        gap: 240px;
-    }
-
-
-
-    #hand2{
-        /* width: 110px; */
-        /* height: 140px; */
-        left: 50px;
-        margin-top: -425px;
-    }
-
-    .features-description{
-        font-size: 19px;
-    }
-}
-
-
-@media (max-width: 700px) {
-    #features-text > p{
-        font-size: 23px;
-    }
-    
-    .img-line1{
-        gap: 240px;
-    }
-
-    .img-line2{
-        margin-top: 350px;
-        gap: 220px;
-    }
-
-    #hand2{
-        width: 100px;
-        height: 130px;
-        left: 50px;
-        margin-top: -410px;
-    }
-
-    .features-description{
-        font-size: 18px;
-    }
-}
-
-
-@media (max-width: 680px) {
-    
-    .img-line1{
-        gap: 220px;
-    }
-
-    .img-line2{
-        margin-top: 330px;
-        gap: 200px;
-    }
-
-    #hand2{
-        width: 90px;
-        height: 120px;
-        left: 50px;
-        margin-top: -400px;
-    }
-
-    .features-description{
-        font-size: 17px;
-    }
-}
-
-
-@media (max-width: 660px) {
-    #features-text > p{
-        font-size: 21px;
-    }
-    
-    .img-line1{
-        gap: 200px;
-    }
-
-    .img-line2{
-        margin-top: 310px;
-        gap: 180px;
-    }
-
-    #hand2{
-        width: 80px;
-        height: 105px;
-        left: 50px;
-        margin-top: -380px;
-    }
-
-    .features-description{
-        font-size: 16px;
-    }
-}
-
-
-
-
-
-
-@media (max-width: 640px) {
-    #features-text > p{
-        font-size: 20px;
-    }
-    
-    .img-line1{
-        gap: 180px;
-    }
-
-    .img-line2{
-        margin-top: 290px;
-        gap: 170px;
-    }
-
-    #hand2{
-        width: 70px;
-        height: 95px;
-        left: 55px;
-        margin-top: -355px;
-    }
-
-    .features-description{
-        font-size: 16px;
-    }
-}
-
-
-
-
-
-
-
-
-@media (max-width: 615px) {
-    #features-text > p{
-        font-size: 19px;
-    }
-    
-    .img-line1{
-        gap: 170px;
-    }
-
-    .img-line2{
-        margin-top: 270px;
-        gap: 170px;
-    }
-
-    #hand2{
-        /* width: 70px; */
-        /* height: 95px; */
-
-        width: 10%;
+    .img-features-mobile{
+        width: 100%;
         height: auto;
-
-        left: 58px;
-        margin-top: -335px;
     }
 
-    .features-description{
-        font-size: 16px;
+    .features-description-mobile{
+        font-size: 3vw;
+    }
+
+
+    #img-container-mobile-1{
+        position: relative;
+    }
+
+    #hand-mobile{
+        position: absolute;
+        transform: scale(-1, 1) rotate(-20deg);
+
+        /* left: -30px;
+        top: -40px; */
+
+        left: -7%;
+        top: -12%;
+
+        width: 20%;
+        height: auto;   
+    }
+
+}
+
+@media (max-width: 450px) {
+    #features-text > p{
+        font-size: 3.5vw;
     }
 }
-/* -------- Изменяем размеры картинок -------- */
