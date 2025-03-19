@@ -3,21 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Detective Bird Games</title>
-    <!-- <link rel="stylesheet" href="style/style.css"> -->
+    <title>Детективная игра</title>
     <link rel="stylesheet" href="style/global.css">
     <link rel="stylesheet" href="style/heading.css">
-    <link rel="stylesheet" href="style/emotions.css">
-    <!-- <link rel="stylesheet" href="style/emotions2.css"> -->
-    <!-- <link rel="stylesheet" href="style/features.css"> -->
-    <link rel="stylesheet" href="style/features2.css">
+    <link rel="stylesheet" href="style/emotions2.css">
+    <link rel="stylesheet" href="style/features3.css">
     <link rel="stylesheet" href="style/when.css">
     <link rel="stylesheet" href="style/traces.css">
+    <link rel="icon" href="icons/32x32.ico" sizes="any">
+    <link rel="icon" href="icons/512x512.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="icons/180x180.png">
+    <link rel="manifest" href="icons/manifest.webmanifest">
 </head>
-<body>
+
+<body class="wrapper">
     <div id="heading">
         <div id="main-banner">
-            <img src="Картинки/logo.svg" alt="No image!" id="img-logo">
+            <img src="img/logo.svg" alt="No image!" id="img-logo">
             <p id="company-name">Detective Bird Games</p>
 
             <div id="line-container">
@@ -31,7 +33,7 @@
 
         </div>
 
-        <img src="Картинки/gallows.svg" alt="No image!" id="gallows">
+        <img src="img/gallows.svg" alt="No image!" id="gallows">
 
         <p id="text-description">
             Известный театральный режиссёр Максим Островский найден мёртвым в собственном театре. 
@@ -46,74 +48,45 @@
         </p>
         
         
-        <a href="https://t.me/DetectiveBirdGames" id="go-to-tg">СЛЕДИТЬ ЗА ЗАПУСКОМ</a>
+        <a href="https://t.me/dbg_manager" id="go-to-tg">ЗАКАЗАТЬ ИГРУ</a>
         
         
+        <img src="img/hand.png" alt="No Image!" class="hand">
     </div>
 
-    <img src="Картинки/hand.png" alt="No Image!" class="hand">
+    
 
 
 
     <!--    - - - - - - - - - -  E M O T I O N S  - - - - - - - - - -      -->
+    <div id="emotions-container">
+        <div id="emotions">
+            <div>
+                <img src="img/boredom.svg" alt="No Image!" >
+                <div class="emotions-text">
+                    <p class="emotions-text-title">СКУКОТА</p>
+                    <p class="emotions-text-subtitle"> 0 / 10</p>
+                </div>
+            </div>
+            
+            <div>
+                <img src="img/paper.svg" alt="No Image!" >
+                <div class="emotions-text">
+                    <p class="emotions-text-title">ОБЪЕМ ПРАВИЛ</p>
+                    <p class="emotions-text-subtitle">1 ЛИСТ</p>
+                </div>
+            </div>
+            
 
-
-    <!-- <div id="emotions">
-        <div>
-            <img src="Картинки/boredom.svg" alt="No Image!" >
-            <div class="emotions-text">
-                <p>СКУКОТА</p>
-                <p> 0 / 10</p>
+            <div>
+                <img src="img/cross.svg" alt="No Image!">
+                <div class="emotions-text">
+                    <p class="emotions-text-title">ВОСПОМИНАНИЯ</p>
+                    <p class="emotions-text-subtitle">НА ВСЮ ЖИЗНЬ</p>
+                </div>
             </div>
             
         </div>
-        
-        <div>
-            <img src="Картинки/torn papper.svg" alt="No Image!" >
-            <div class="emotions-text">
-                <p>ОБЪЕМ ПРАВИЛ</p>
-                <p>1 ЛИСТ</p>
-            </div>
-        </div>
-        
-
-        <div>
-            <img src="Картинки/cross.svg" alt="No Image!">
-            <div class="emotions-text">
-                <p>ВОСПОМИНАНИЯ</p>
-                <p>НА ВСЮ ЖИЗНЬ</p>
-            </div>
-        </div>
-        
-    </div> -->
-
-
-    <div id="emotions">
-        <div>
-            <img src="Картинки/boredom.svg" alt="No Image!" >
-            <div class="emotions-text">
-                <p>СКУКОТА</p>
-                <p> 0 / 10</p>
-            </div>
-        </div>
-        
-        <div>
-            <img src="Картинки/torn papper.svg" alt="No Image!" >
-            <div class="emotions-text">
-                <p>ОБЪЕМ ПРАВИЛ</p>
-                <p>1 ЛИСТ</p>
-            </div>
-        </div>
-        
-
-        <div>
-            <img src="Картинки/cross.svg" alt="No Image!">
-            <div class="emotions-text">
-                <p>ВОСПОМИНАНИЯ</p>
-                <p>НА ВСЮ ЖИЗНЬ</p>
-            </div>
-        </div>
-        
     </div>
     <!--     /  /  /  /  /  /  E M O T I O N S   /  /  /  /  /  /      -->
 
@@ -121,175 +94,90 @@
 
 
 
-
-    <div id="container">
+    
         
-
+    <div id="container">
         <!--    - - - - - - - - - -  F E A T U R E S - - - - - - - - - -      -->
-        <div id="features">
-
-            <div id="features-text">
-                <span class="line2"></span>
-                    <p>Особенности игры</p>
-                <span class="line2"></span>
-            </div>
-
 
             <!-- Картинки -->
             <div class="img-line1">
                 <div class="first-img">
-                    <div class="features-img" id="img1"></div>
-
-                    <img 
-                        src="Картинки с игры/detective2.jpg" 
+                    <div class="features-img" id="img1">
+                        <img 
+                        src="img/feature1.webp" 
                         alt="No Image!" 
                         class="img-features-img" 
                         loading="lazy" 
                         id="img-features-img1"
                     >
+                    </div>
 
                     <p class="features-description">
                         Атмосферное расследование с настоящими уликами, документами и протоколами.
                     </p>
 
-                    <img src="Картинки/hand.png" alt="No Image!" id="hand2">
-                    <img src="Картинки/clip.svg" alt="No Image!" class="clip" id="clip1">
+                    <img src="img/hand.png" alt="No Image!" id="hand2">
+                    <img src="img/clip.svg" alt="No Image!" class="clip" id="clip1">
                 </div>
 
 
                 <div class="second-img">
-                    <div class="features-img" id="img2"></div>
-
-                    <img 
-                        src="Картинки с игры/Лупа copy.png" 
+                    <div class="features-img" id="img2">
+                        <img 
+                        src="img/feature2.webp" 
                         alt="No Image!" 
                         class="img-features-img" 
                         loading="lazy"
-                    >
+                        >
+                    </div>
                     
                     <p class="features-description">
                         Чистая дедукция: никаких случайных догадок, только логика и внимание к деталям
                     </p>
 
-                    <img src="Картинки/clip.svg" alt="No Image!" class="clip" id="clip2">
+                    <img src="img/clip.svg" alt="No Image!" class="clip" id="clip2">
                 </div>
 
             </div>
+
 
             <div class="img-line2">
                 <div class="first-img">
-                    <div class="features-img" id="img3"></div>
-
-                    <img 
-                        src="Картинки с игры/detective1.jpg" 
+                    <div class="features-img" id="img3">
+                        <img 
+                        src="img/feature3.webp" 
                         alt="No Image!" 
                         class="img-features-img" 
                         loading="lazy"
-                    >
-                    
+                        >
+                    </div>
+
                     <p class="features-description">
                         Театральное закулисье, где каждый скрывает свои мотивы
                     </p>
 
-                    <img src="Картинки/clip.svg" alt="No Image!" class="clip" id="clip3">
+                    <img src="img/clip.svg" alt="No Image!" class="clip" id="clip3">
                 </div>
 
 
                 <div class="second-img">
-                    <div class="features-img" id="img4"></div>
-
-                    <img 
-                        src="Картинки с игры/1741376425855_polarr copy.jpg" 
+                    <div class="features-img" id="img4">
+                        <img 
+                        src="img/feature4.webp" 
                         alt="No Image!" 
                         class="img-features-img" 
                         loading="lazy"
-                    >
+                        >
+                    </div>
                     
                     <p class="features-description">
                         Можно пройти в одиночку или в компании
                     </p>
 
-                    <img src="Картинки/clip.svg" alt="No Image!" class="clip" id="clip4">
+                    <img src="img/clip.svg" alt="No Image!" class="clip" id="clip4">
                 </div>
 
             </div>
-
-
-
-
-
-            <!--    А Д А П Т И В Н О С Т Ь    Н А    М О Б И Л Ь Н Ы Е    -->
-            <div id="images-mobile">
-
-                <div class="img-container-mobile" id="img-container-mobile-1">
-                    <img 
-                        src="Картинки с игры/detective2.jpg" 
-                        alt="No Image!" 
-                        class="img-features-mobile" 
-                        loading="lazy"                     >
-
-                    <p class="features-description-mobile">
-                        Атмосферное расследование с настоящими уликами, документами и протоколами.
-                    </p>
-
-                    <img src="Картинки/hand.png" alt="No Image!" id="hand-mobile">
-                </div>
-
-
-
-                <div class="img-container-mobile">
-                    <img 
-                        src="Картинки с игры/Лупа copy.png" 
-                        alt="No Image!" 
-                        class="img-features-mobile"  
-                        loading="lazy" 
-                    >
-    
-                    <p class="features-description-mobile">
-                        Чистая дедукция: никаких случайных догадок, только логика и внимание к деталям
-                    </p>
-    
-                </div>
-    
-    
-    
-    
-    
-                <div class="img-container-mobile">
-                    <img 
-                        src="Картинки с игры/detective1.jpg" 
-                        alt="No Image!" 
-                        class="img-features-mobile" 
-                        loading="lazy" 
-                    >
-    
-                    <p class="features-description-mobile">
-                        Театральное закулисье, где каждый скрывает свои мотивы
-                    </p>
-    
-                </div>
-
-
-
-
-                <div class="img-container-mobile">
-                    <img 
-                        src="Картинки с игры/1741376425855_polarr copy.jpg" 
-                        alt="No Image!" 
-                        class="img-features-mobile"  
-                        loading="lazy" 
-                    >
-    
-                    <p class="features-description-mobile">
-                        Можно пройти в одиночку или в компании
-                    </p>
-    
-                </div>
-
-
-            </div>
-
-
         </div>
         
         <!--     /  /  /  /  /  /  F E A T U R E S /  /  /  /  /  /      -->
@@ -303,23 +191,22 @@
 
             <div id="when-text">
                 <span class="line3"></span>
-                    <p>Когда выйдет игра?</p>
+                    <p>Когда выйдет продолжение?</p>
                 <span class="line3"></span>
             </div>
 
             
 
             <div id="when-block">
-                <img src="Картинки/curtain left.svg" alt="No Image!" class="curtains" id="left-curtain">
+                <img src="img/curtain_left.svg" alt="No Image!" class="curtains" id="left-curtain">
 
                 <div id="when-description">
-                    <p>Игра уже почти готова!</p>
-                    <p>Старт продаж - совсем скоро!</p>
+                    <p>Мы услышали ваши позитивные отзывы и уже работаем над следующей частью!</p>
                     <p>Подпишись на наш Telegram, чтобы не пропустить анонсы!</p>
-                    <a href="https://t.me/DetectiveBirdGames" id="telegram">telegram</a>
+                    <a href="https://t.me/DetectiveBirdGames" id="telegram">TELEGRAM</a>
                 </div>
 
-                <img src="Картинки/curtain right.svg" alt="No Image!" class="curtains" id="right-curtain">
+                <img src="img/curtain_right.svg" alt="No Image!" class="curtains" id="right-curtain">
             </div>
 
         </div>
@@ -331,8 +218,8 @@
 
     <!--    - - - - - - - - - -  T R A C E S  - - - - - - - - - -      -->
     <div id="traces">
-        <img src="Картинки/traces.png" alt="No Image!" class="traces-img" id="first-trace-img">
-        <img src="Картинки/traces.png" alt="No Image!" class="traces-img" id="second-trace-img">
+        <img src="img/traces.png" alt="No Image!" class="traces-img" id="first-trace-img">
+        <img src="img/traces.png" alt="No Image!" class="traces-img" id="second-trace-img">
     </div>
     <!--     /  /  /  /  /  /   T R A C E S   /  /  /  /  /  /      -->
 
